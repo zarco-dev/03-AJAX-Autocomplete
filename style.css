@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+  /* background-color: #202124; */
+}
+
+#container {
+  height: 50vh;
+  width: 600px;
+  /* background-color: yellowgreen; */
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container__title{
+  font-size: 5em;
+  margin-bottom: 35px;
+  /* background-color: #34A853; */
+  width: 100%;
+  text-align: center;
+  padding-right: 50px;
+  letter-spacing: -10px;
+}
+
+.container__title span{
+  margin-right: 2px;
+}
+
+span:first-child, span:nth-child(4){
+  color: #4385F5;
+}
+
+span:nth-child(2), span:nth-child(6){
+  color: #EB4235;
+}
+
+span:nth-child(3){
+  color:#F9BC04;
+}
+
+span:nth-child(5){
+  color: #34A853;
+}
+
+#container input {
+  width: 100%;
+  height: 45px;
+  line-height: 32px;
+  font-size: 24px;
+  padding: 0 4px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border: 1px solid rgba(0,0,0,0.25);
+  transition: outline .2s;
+  -webkit-transition: outline .2s;
+  -moz-transition: outline .2s;
+  -ms-transition: outline .2s;
+  -o-transition: outline .2s;
+  font-size: 1.2em;
+  flex-grow: 1;
+  padding-left: 50px;
+}
+
+#container input:focus{
+  outline: none;
+  padding-left: 50px;
+}
+
+#container input:hover{
+  box-shadow: 0 1px 3px rgba(0,0,0,.20);
+}
+
+i.fa-solid{
+  position: relative;
+  right: 93.5%;
+  color: #9AA0A6;
+}
+
+.form{
+  /* background-color: rebeccapurple; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+#results{
+  list-style: none;
+  width: 97.4%;
+  position: relative;
+  bottom: 45px;
+  z-index: 10;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  box-shadow: 1PX 1px 5px rgba(0,0,0,.30);
+}
+
+/* #results */
+
+#results li{
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  /* border-bottom: 1px solid rgba(0,0,0,.25); */
+}
+
+#results li:hover{
+  background-color: #d4d6d88d;
+  cursor: default;
+}
+
+#results li:first-child, #results li:nth-child(2), #results li:nth-child(3){
+  border-bottom: none;
+}
+
+#results li:last-child{
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+button{
+  margin-right: 30px;
+  position: absolute;
+  top: 15px;
+  width: 100px;
+  left: 15px;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(40, 40, 40);
+}
+
+.dark{
+  background-color: #242320 ;
+  color: white;
+}
+
+.container__title__dark{
+  color:white !important;
+}
+
+.ul_dark{
+  background-color: #414140;
+}
+
+.input_dark{
+  color: white;
+}
+
+.button_dark{
+  background-color: white;
+  color: black;
+}
+
+.button_dark:hover{
+  background-color: rgb(221, 219, 219)
+}
+
+.container__footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-footer {
+  margin-top: 30px;
+  /* border: 1px solid #e1e2e3; */
+  background-color: #f4f6f6;
+  border-radius: 4px;
+  color: #303134;
+  font-family: arial,sans-serif;
+  font-size: 15px;
+  margin: 10px;
+  /* margin-left: 10px; */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 11px;
+  padding-right: 11px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  right: 20px;
+}
+.btn-footer:hover {
+  box-shadow: 1px 1px 4px rgba(0,0,0,.20);
+}
+
+.btn_dark{
+  background-color: #414140;
+  color: white;
+}
+
+.btn_dark:hover{
+  box-shadow: 1px 1px 4px rgba(175, 175, 175, 0.34);
+}
